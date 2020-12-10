@@ -2,7 +2,7 @@ function binarySearch(arr, target, mid=0){
     if(arr[mid + 1] === target)return true
     if(arr[mid - 1] === target)return true
     if(arr[mid] === target)return true
-    if(target < arr[mid] && target > arr[mid - 1] || target > arr[mid] && target < arr[mid + 1]) return 
+    if(target < arr[mid] && target > arr[mid - 1] || target > arr[mid] && target < arr[mid + 1]) return false
     if(target < arr[0] || target > arr[arr.length-1])return false
     
     
